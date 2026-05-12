@@ -1,2 +1,2 @@
-<meta name="google-site-verification" content="VdzUo0Zxl0_5xxq1giPoJKGRKFZ8zeQeC9kUBpdMi4w" />
+
 nano /etc/network/interfaces
