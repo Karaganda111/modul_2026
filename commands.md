@@ -26,6 +26,7 @@
   # crontab -e
     Будет предложен выбор текстового редактора пишем 1 и нажимаем Enter 
     добавляем в конец файла следующую строки:
+    
     @reboot /sbin/iptables-restore < /etc/rules.v4
     @reboot /sbin/sysctl -p
   
@@ -65,7 +66,8 @@ HQ-RTR:
   # mkdir /home/net_admin
   далее отредактируем файл sudoers
   # nano /etc/sudoers
-    находим строку, начинающуюся на “%sudo” и изменяем её значение на
+    находим строку, начинающуюся на “%sudo” и изменяем её значение на:
+    
     %sudo  ALL=(ALL:ALL) NOPASSWD: ALL
     проверяем изменения 
   # su net_admin
@@ -90,7 +92,8 @@ HQ-RTR:
   задание 7
   # echo "nameserver 8.8.8.8" > /etc/resolv.conf
   # nano /etc/apt/sources.list
-    и добавляем следующую строку
+    и добавляем следующую строку:
+    
     deb [trusted=yes] https://archive.debian.org/debian buster main
   # apt update
     После уже можно устанавливать пакет frr
@@ -142,8 +145,10 @@ HQ-RTR:
  # apt-get update && apt-get install -y isc-dhcp-server
  # nano /etc/default/isc-dhcp-server
   Его содержимое:
+  
       INTERFACESv4="eth1.200"
       #INTERFACESv6=""
+      
   Перед настройкой конфигурационного файла сохраним его копию, для этого введем следующие команды:
  # cp /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.bkp
   Так, теперь перейдем к изменению конфигурационного файла:
