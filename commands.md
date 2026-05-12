@@ -358,7 +358,9 @@ HQ-SRV:
   приводим файл к следующему виду:
   
   BOOTPROTO=static
+  
   TYPE=eth
+  
   DISABLED=no
   
     создаем файлы в директории интерфейса и приводим их к следующему виду
@@ -392,9 +394,13 @@ HQ-SRV:
   
   # mcedit /etc/openssh/sshd_config
     Port 2026
+    
     AllowUsers sshuser
+    
     PermitRootLogin no
+    
     MaxAuthTries 2
+    
     Banner /root/banner
     
     после сохраняем и закрываем файл
