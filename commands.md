@@ -201,13 +201,14 @@ BR-RTR:
  # hostnamectl set-hostname br-rtr.au-team.irpo
  # bash
  # nano /etc/network/interfaces
+ 
    auto eth0
    iface eth0 inet static
-     address 172.16.2.2/28
-     gateway 172.16.2.1
+   address 172.16.2.2/28
+   gateway 172.16.2.1
    auto eth1
    iface eth1 inet static
-     address 192.168.3.1/28
+   address 192.168.3.1/28
  # systemctl restart networking
 
  
