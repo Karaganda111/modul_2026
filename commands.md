@@ -1,3 +1,5 @@
+сеть настройка isp hq-rtr br-rtr vlan ospf nat dhcp dns
+ 
  ISP:
  
    задание 1
