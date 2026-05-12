@@ -134,6 +134,7 @@ HQ-RTR:
   после ввода данной команды открываем crontab следующей командой
  # crontab -e
   Будет предложен выбор текстового редактора пишем 1 и нажимаем Enter добавляем в конец файла следующую строки:
+  
   @reboot /sbin/iptables-restore < /etc/rules.v4
   @reboot /sbin/sysctl -p
 
