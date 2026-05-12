@@ -75,7 +75,6 @@ HQ-RTR:
 
   задание 6
   # nano /etc/network/interfaces
-  и в конец файла добавляем следующие строки
     auto gre1
     iface gre1 inet tunnel
     address 10.0.0.1
