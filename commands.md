@@ -154,6 +154,7 @@ HQ-RTR:
   Так, теперь перейдем к изменению конфигурационного файла:
  # nano /etc/dhcp/dhcpd.conf
   Приведём к виду:
+  
     #option domain-name "example.org";
     #option domain-name-server ns1.example.org, ns2.example.org;
     authoritative;
