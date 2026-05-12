@@ -69,8 +69,8 @@ HQ-RTR:
     %sudo  ALL=(ALL:ALL) NOPASSWD: ALL
     проверяем изменения 
   # su net_admin
-  sh-4.4$ sudo ls
-  sh-4.4$ su root
+  # sh-4.4$ sudo ls
+  # sh-4.4$ su root
   Пароль: P@ssw0rd
 
   задание 6
